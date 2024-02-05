@@ -8,15 +8,15 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = "us-east-2"
 }
  
 resource "aws_iam_group" "developers" {     
-name = "developer"
+name = "ansiblegroups"
 path = "/users/"
 }
 
 resource "aws_iam_user" "lb" {
-  name = "joyce092"
+  name = "ansible"
   
 }
